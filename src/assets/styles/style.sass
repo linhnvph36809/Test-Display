@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap")
+
+$text-color: #161617
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+
+html
+    font-family: 'Open Sans', sans-serif
+    font-optical-sizing: auto
+    font-weight: 400
+    font-style: normal
+    font-size: 62.5%
+
+
+.content
+    background-color: #fff
+    padding: 0 12px
+    .content__heading-large
+        font-size: 2.4rem
+        font-weight: 600
+        padding: 24px 0
+        margin: 0
+    .content__heading-base
+        font-size: 1.8rem
+        font-weight: 700
+        color: $text-color
+        margin-top: 0 !important
+        margin-bottom: 16px
+
+    .content__infor
+        background-color: #F1F3F6
+        width: 635px
+        height: 32px 
+        align-items: center
+        padding: 5px
+        margin-bottom: 8px
+        .content__label
+            width: 160px
+            margin: 0
+            color: #797B88
+            font-size: 14px
+        .content__description
+            margin: 0
+            font-size: 1.6rem
+            font-weight: 600
+            color: $text-color
+    .content__form 
+        margin-top: 35px
+        margin-bottom: 16px
+        .content__input
+            width: 145px
+            height: 35px
+            border: none
+            text-overflow: clip
+            padding: 0
+            font-size: 1.8rem
+            font-weight: 700
+            &::placeholder
+                color: $text-color
+                font-size: 1.8rem
+                font-weight: 700
+            &:focus
+                outline: none
+                box-shadow: none 
+        .content__btn
+            height: 35px 
+            padding: 0 10px
+            font-size: 1.4rem !important
+            color: #858792
+    .content__table
+        border: 1px solid #C7C7C7
+        .ant-pagination
+            display: none
+        table th 
+            color: $text-color !important
+            background-color: #F5F6F8
+            padding: 17px 16px !important
+            border-bottom: 1px solid #C7C7C7
+            &::before
+                background-color: #858792 !important
+                width: 0.5px !important
+                height: 32px !important
+        table tbody td
+            border-bottom: 1px solid #C7C7C7
+            font-size: 1.2rem !important
+            font-weight: 600
+    .content__pagination
+        display: flex
+        list-style: none
+        align-items: center
+        justify-content: center
+        gap: 16px
+        margin: 12px 0
+        .content__pagination--number
+            font-size: 1.4rem
+            font-weight: 600
+            color: #646464
+    .content__btn--upload 
+        border-color: #EB2725
+        color: #EB2725
+        border-radius: 4px
+        font-size: 14px
+        &:hover
+            border-color: #EB2725 !important
+            color: #EB2725 !important
+            border-radius: 4px !important
