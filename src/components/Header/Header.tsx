@@ -1,6 +1,7 @@
 import { Button, Flex, Typography } from "antd";
 import { Header } from "antd/es/layout/layout";
 import "./header.sass";
+import { FormattedMessage } from "react-intl";
 
 const { Title } = Typography;
 
@@ -10,8 +11,8 @@ const HeaderComponent = () => {
       <Header className="header">
         <Flex gap={"20px"} align="center">
           <svg
-            width="24"
-            height="24"
+            width={24}
+            height={24}
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -21,15 +22,20 @@ const HeaderComponent = () => {
               fill="white"
             />
           </svg>
+
           <Flex align="center" gap={"16px"}>
-            <Title level={1}>セラーセントラル</Title>
+            <Title level={1}>
+              <FormattedMessage id="header.title" />
+            </Title>
             <p></p>
-            <Button className="header__btn">DCTSHOP | 日本</Button>
+            <Button className="header__btn">
+              DCTSHOP | <FormattedMessage id="header.button" />
+            </Button>
           </Flex>
         </Flex>
         <svg
-          width="24"
-          height="24"
+          width={24}
+          height={24}
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
