@@ -1,5 +1,67 @@
+$text-color: #161617
+
 .modal
     min-height: 636px !important
     top: 33px !important
     .ant-modal-content
         border-radius: unset !important
+        padding: 20px 0
+    .ant-modal-header
+        padding-bottom: 20px
+        margin-bottom: 0
+    .ant-modal-footer
+        margin-top: 20px
+    .ant-modal-title
+        margin-left: 24px
+        font-size: 2rem
+        font-weight: 600
+        color: #161617
+    .modal__body
+        padding: 0 24px
+        border-top: 1px solid #C7C7C7
+        border-bottom: 1px solid #C7C7C7
+    .modal__title
+        font-size: 1.4rem
+        font-weight: 600
+        color: $text-color
+        margin-top: 24px
+    .modal__radio
+        display: flex
+        align-items: center
+        margin-bottom: 8px
+        span
+            font-size: 1.6rem
+            color: #343434
+    .ant-btn-default
+        display: none
+    .ant-btn-primary
+        width: 170px
+        height: 48px
+        font-size: 1.6rem
+        font-weight: 700
+        margin-right: 24px
+    .modal__form
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 24px 16px
+        padding: 28px 0
+        .ant-form-item
+            margin: 0
+        .modal__item
+            .modal__label
+                font-size: 1.4rem
+                font-weight: 600
+                color: $text-color
+            .modal__input,.modal__select 
+                height: 48px
+                border-radius: 8px
+                font-size: 1.2rem
+                color: #343434
+                font-weight: 400
+                &::placeholder
+                    font-size: 1.2rem
+                    color: #343434
+                    font-weight: 400
+:where(.css-dev-only-do-not-override-d2lrxs).ant-modal .ant-modal-close 
+    top: 18px
+    right: 30px

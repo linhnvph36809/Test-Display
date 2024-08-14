@@ -1,4 +1,5 @@
 import { Button, Upload } from "antd";
+import { FormattedMessage } from "react-intl";
 
 export const columns = [
   {
@@ -12,22 +13,22 @@ export const columns = [
     dataIndex: "trackingNumber",
   },
   {
-    title: "SKU/商品名/商品のURL",
+    title: <FormattedMessage id="table.productName" />,
     key: "SKU/商品名/商品のURL",
     dataIndex: "name",
   },
   {
-    title: "数量",
+    title: <FormattedMessage id="table.quantity" />,
     key: "数量",
     dataIndex: "quantity",
   },
   {
-    title: "写真撮影",
+    title: <FormattedMessage id="table.photoShoot" />,
     key: "写真撮影",
     dataIndex: "takePhoto",
   },
   {
-    title: "商品画像",
+    title: <FormattedMessage id="table.productImage" />,
     key: "商品画像",
     dataIndex: "imageProducts",
     render: (_: any, { imageProducts }: any) => {
@@ -35,7 +36,7 @@ export const columns = [
         <div>
           <Upload>
             <Button className="content__btn--upload">
-              検品画像アップロード
+              <FormattedMessage id="table.buttonUpload" />
             </Button>
           </Upload>
           {imageProducts.map((imageProduct: string, i: number) => (
@@ -97,52 +98,52 @@ export const columns = [
     },
   },
   {
-    title: "検品依頼内容",
+    title: <FormattedMessage id="table.requestDetails" />,
     key: "検品依頼内容",
     dataIndex: "requestDetails",
   },
   {
-    title: "検品依収内容",
+    title: <FormattedMessage id="table.receiptDetails" />,
     key: "検品依収内容",
     dataIndex: "receiptDetails",
   },
   {
-    title: "請求書番号",
+    title: <FormattedMessage id="table.invoiceNumber" />,
     key: "請求書番号",
     dataIndex: "invoiceNumber",
   },
   {
-    title: "受付番号",
+    title: <FormattedMessage id="table.receptionNumber" />,
     key: "受付番号",
     dataIndex: "receptionNumber",
   },
   {
-    title: "ステータス",
+    title: <FormattedMessage id="table.status" />,
     key: "ステータス",
     dataIndex: "status",
   },
   {
-    title: "商品状態",
+    title: <FormattedMessage id="table.statusProduct" />,
     key: "商品状態",
     dataIndex: "statusProduct",
   },
   {
-    title: "検品結果",
+    title: <FormattedMessage id="table.results" />,
     key: "検品結果",
     dataIndex: "testResults",
   },
   {
-    title: "発送詳細",
+    title: <FormattedMessage id="table.shipping" />,
     key: "発送詳細",
     dataIndex: "shippingDetails",
   },
   {
-    title: "支店名/担当者名",
+    title: <FormattedMessage id="table.nameOfBranch" />,
     key: "支店名",
     dataIndex: "NameOfBranch",
   },
   {
-    title: "その他支払い方法",
+    title: <FormattedMessage id="table.paymentMethods" />,
     key: "その他支払い方法",
     dataIndex: "paymentMethods",
   },
@@ -155,52 +156,52 @@ export const rows = [
     trackingNumber: "Lorem ipsum dolor sit amet .",
     name: "Lorem ipsum dolor sit amet .",
     quantity: "1",
-    takePhoto: "要",
+    takePhoto: <FormattedMessage id="table.rowPhotoShoot" />,
     imageProducts: ["12", "1231"],
-    requestDetails: "不要",
+    requestDetails: <FormattedMessage id="table.rowRequestDetails" />,
     receiptDetails: "Lorem ipsum .",
     invoiceNumber: "243545366",
     receptionNumber: "463546653",
-    status: "商品未到着",
-    statusProduct: "ほぼ新品",
+    status: <FormattedMessage id="table.rowStatus" />,
+    statusProduct: <FormattedMessage id="table.rowStatusProduct" />,
     testResults: "Lorem ipsum",
     shippingDetails: "Lorem ipsum",
     NameOfBranch: "Admin",
     paymentMethods: "Lorem ipsum .",
   },
   {
-    key: "1",
+    key: "2",
     id: "34355",
     trackingNumber: "Lorem ipsum dolor sit amet .",
     name: "Lorem ipsum dolor sit amet .",
     quantity: "1",
-    takePhoto: "要",
+    takePhoto: <FormattedMessage id="table.rowPhotoShoot" />,
     imageProducts: ["12", "1231"],
-    requestDetails: "不要",
+    requestDetails: <FormattedMessage id="table.rowRequestDetails" />,
     receiptDetails: "Lorem ipsum .",
     invoiceNumber: "243545366",
     receptionNumber: "463546653",
-    status: "商品未到着",
-    statusProduct: "ほぼ新品",
+    status: <FormattedMessage id="table.rowStatus" />,
+    statusProduct: <FormattedMessage id="table.rowStatusProduct" />,
     testResults: "Lorem ipsum",
     shippingDetails: "Lorem ipsum",
     NameOfBranch: "Admin",
     paymentMethods: "Lorem ipsum .",
   },
   {
-    key: "1",
+    key: "3",
     id: "34355",
     trackingNumber: "Lorem ipsum dolor sit amet .",
     name: "Lorem ipsum dolor sit amet .",
     quantity: "1",
-    takePhoto: "要",
+    takePhoto: <FormattedMessage id="table.rowPhotoShoot" />,
     imageProducts: ["12", "1231"],
-    requestDetails: "不要",
+    requestDetails: <FormattedMessage id="table.rowRequestDetails" />,
     receiptDetails: "Lorem ipsum .",
     invoiceNumber: "243545366",
     receptionNumber: "463546653",
-    status: "商品未到着",
-    statusProduct: "ほぼ新品",
+    status: <FormattedMessage id="table.rowStatus" />,
+    statusProduct: <FormattedMessage id="table.rowStatusProduct" />,
     testResults: "Lorem ipsum",
     shippingDetails: "Lorem ipsum",
     NameOfBranch: "Admin",
