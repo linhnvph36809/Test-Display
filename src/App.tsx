@@ -1,18 +1,19 @@
-import { Button, Flex, Form, Input, Layout, Table, Typography } from "antd";
-import "./assets/styles/style.sass";
-import HeaderComponent from "./components/Header/Header";
-const { Paragraph, Title } = Typography;
-import { columns } from "./datas";
-import { rows } from "./datas";
-import ModalComponent from "./components/Modal/Modal";
 import { useCallback, useState } from "react";
+import { Button, Flex, Form, Input, Layout, Table, Typography } from "antd";
+import { FormattedMessage, IntlProvider } from "react-intl";
+import "./assets/styles/style.sass";
+
+const { Paragraph, Title } = Typography;
+import HeaderComponent from "./components/Header/Header";
+import { columns, rows } from "./datas";
+import ModalComponent from "./components/Modal/Modal";
 import message_en from "./translations/en.json";
 import message_ja from "./translations/ja.json";
-import { FormattedMessage, IntlProvider } from "react-intl";
 
 type Locale = "en" | "ja";
 
 const initState = {
+  isSelected: false,
   keySelected: null,
   datas: null,
 };
@@ -58,7 +59,15 @@ function App() {
                 : Nguyenvana@gmail.com
               </Paragraph>
             </Flex>
-            <Form className="content__form">
+            <Form
+              className="content__form"
+              onFinish={() =>
+                setIsModalOpen((state: any) => ({
+                  ...state,
+                  isSelected: state.keySelected ? true : false,
+                }))
+              }
+            >
               <Flex gap={"16px"}>
                 <Input
                   className="content__input"
@@ -68,7 +77,7 @@ function App() {
                       : message_ja["content.labelEmail"]
                   }
                 />
-                <Button className="content__btn">
+                <Button className="content__btn" htmlType="submit">
                   <FormattedMessage id="content.searchButton" />
                 </Button>
               </Flex>

@@ -1,5 +1,8 @@
 import { Button, Upload } from "antd";
 import { FormattedMessage } from "react-intl";
+import InputText from "./components/Form/InputText";
+import InputRadio from "./components/Form/InputRadio";
+import SelectComponent from "./components/Form/SelectComponent";
 
 export const columns = [
   {
@@ -26,6 +29,16 @@ export const columns = [
     title: <FormattedMessage id="table.photoShoot" />,
     key: "写真撮影",
     dataIndex: "takePhoto",
+    render: () => {
+      return (
+        <>
+          <span className="table__text--lg">
+            <FormattedMessage id="table.rowPhotoShoot" />
+          </span>
+          <InputRadio className="content__radio" />
+        </>
+      );
+    },
   },
   {
     title: <FormattedMessage id="table.productImage" />,
@@ -39,7 +52,7 @@ export const columns = [
               <FormattedMessage id="table.buttonUpload" />
             </Button>
           </Upload>
-          {imageProducts.map((imageProduct: string, i: number) => (
+          {imageProducts.map((_: string, i: number) => (
             <svg
               key={i}
               width={62}
@@ -101,11 +114,29 @@ export const columns = [
     title: <FormattedMessage id="table.requestDetails" />,
     key: "検品依頼内容",
     dataIndex: "requestDetails",
+    render: () => {
+      return (
+        <>
+          <span className="table__text--lg">
+            <FormattedMessage id="table.rowPhotoShoot" />
+          </span>
+          <InputRadio className="content__radio" />
+        </>
+      );
+    },
   },
   {
     title: <FormattedMessage id="table.receiptDetails" />,
     key: "検品依収内容",
     dataIndex: "receiptDetails",
+    render: (_: any, { receiptDetails }: { receiptDetails: string }) => {
+      return (
+        <>
+          <InputText className="table__input" />
+          <span className="table__text--lg">{receiptDetails}</span>
+        </>
+      );
+    },
   },
   {
     title: <FormattedMessage id="table.invoiceNumber" />,
@@ -121,11 +152,40 @@ export const columns = [
     title: <FormattedMessage id="table.status" />,
     key: "ステータス",
     dataIndex: "status",
+    render: () => {
+      return (
+        <>
+          <span className="table__text--lg">
+            <FormattedMessage id="table.rowStatus" />
+          </span>
+          <SelectComponent
+            defaultValue="商品未到着"
+            className="table__select--status"
+            options={optionStatus}
+          />
+        </>
+      );
+    },
   },
   {
     title: <FormattedMessage id="table.statusProduct" />,
     key: "商品状態",
     dataIndex: "statusProduct",
+    render: () => {
+      return (
+        <>
+          <span className="table__text--lg">
+            <FormattedMessage id="table.rowStatus" />
+          </span>
+
+          <SelectComponent
+            defaultValue="新品"
+            className="table__select--status statusProduct"
+            options={optionStatusProducts}
+          />
+        </>
+      );
+    },
   },
   {
     title: <FormattedMessage id="table.results" />,
@@ -146,6 +206,29 @@ export const columns = [
     title: <FormattedMessage id="table.paymentMethods" />,
     key: "その他支払い方法",
     dataIndex: "paymentMethods",
+    render: (_: any, { paymentMethods }: { paymentMethods: string }) => {
+      return (
+        <>
+          <InputText className="table__input" />
+          <span className="table__text--lg">{paymentMethods}</span>
+        </>
+      );
+    },
+  },
+  {
+    title: "",
+    key: "その他支払い方法",
+    className: "table__hidden",
+    dataIndex: "",
+    render: () => {
+      return (
+        <>
+          <Button type="primary" className="btn">
+            <FormattedMessage id="modal.buttonSubmit" />
+          </Button>
+        </>
+      );
+    },
   },
 ];
 
@@ -156,13 +239,13 @@ export const rows = [
     trackingNumber: "Lorem ipsum dolor sit amet .",
     name: "Lorem ipsum dolor sit amet .",
     quantity: "1",
-    takePhoto: <FormattedMessage id="table.rowPhotoShoot" />,
+    takePhoto: "",
     imageProducts: ["12", "1231"],
-    requestDetails: <FormattedMessage id="table.rowRequestDetails" />,
+    requestDetails: "",
     receiptDetails: "Lorem ipsum .",
     invoiceNumber: "243545366",
     receptionNumber: "463546653",
-    status: <FormattedMessage id="table.rowStatus" />,
+    status: "",
     statusProduct: <FormattedMessage id="table.rowStatusProduct" />,
     testResults: "Lorem ipsum",
     shippingDetails: "Lorem ipsum",
@@ -171,17 +254,17 @@ export const rows = [
   },
   {
     key: "2",
-    id: "34355",
+    id: "34356",
     trackingNumber: "Lorem ipsum dolor sit amet .",
     name: "Lorem ipsum dolor sit amet .",
     quantity: "1",
-    takePhoto: <FormattedMessage id="table.rowPhotoShoot" />,
+    takePhoto: "",
     imageProducts: ["12", "1231"],
-    requestDetails: <FormattedMessage id="table.rowRequestDetails" />,
+    requestDetails: "",
     receiptDetails: "Lorem ipsum .",
     invoiceNumber: "243545366",
     receptionNumber: "463546653",
-    status: <FormattedMessage id="table.rowStatus" />,
+    status: "",
     statusProduct: <FormattedMessage id="table.rowStatusProduct" />,
     testResults: "Lorem ipsum",
     shippingDetails: "Lorem ipsum",
@@ -190,21 +273,79 @@ export const rows = [
   },
   {
     key: "3",
-    id: "34355",
+    id: "34357",
     trackingNumber: "Lorem ipsum dolor sit amet .",
     name: "Lorem ipsum dolor sit amet .",
     quantity: "1",
-    takePhoto: <FormattedMessage id="table.rowPhotoShoot" />,
+    takePhoto: "",
     imageProducts: ["12", "1231"],
-    requestDetails: <FormattedMessage id="table.rowRequestDetails" />,
+    requestDetails: "",
     receiptDetails: "Lorem ipsum .",
     invoiceNumber: "243545366",
     receptionNumber: "463546653",
-    status: <FormattedMessage id="table.rowStatus" />,
+    status: "",
     statusProduct: <FormattedMessage id="table.rowStatusProduct" />,
     testResults: "Lorem ipsum",
     shippingDetails: "Lorem ipsum",
     NameOfBranch: "Admin",
     paymentMethods: "Lorem ipsum .",
+  },
+];
+
+export const optionStatus = [
+  {
+    value: "商品未到着",
+    label: <FormattedMessage id="table.rowStatus" />,
+  },
+  {
+    value: "在庫保管中",
+    label: <FormattedMessage id="modal.inStock" />,
+  },
+  {
+    value: "写真アップ要求中",
+    label: <FormattedMessage id="modal.photoUpload" />,
+  },
+  {
+    value: "写真アップ済",
+    label: <FormattedMessage id="modal.photoUpload" />,
+  },
+  {
+    value: "検品オーダー受信",
+    label: <FormattedMessage id="modal.orderReceived" />,
+  },
+  {
+    value: "検品完了",
+    label: <FormattedMessage id="modal.inspectionCompleted" />,
+  },
+  {
+    value: "作業オーダー送信済",
+    label: <FormattedMessage id="modal.orderSubmitted" />,
+  },
+  {
+    value: "処理済",
+    label: <FormattedMessage id="modal.processed" />,
+  },
+];
+
+export const optionStatusProducts = [
+  {
+    value: "新品",
+    label: <FormattedMessage id="modal.new" />,
+  },
+  {
+    value: "ほぼ新品",
+    label: <FormattedMessage id="modal.almostNew" />,
+  },
+  {
+    value: "普通",
+    label: <FormattedMessage id="modal.usually" />,
+  },
+  {
+    value: "中古",
+    label: <FormattedMessage id="modal.secondHand" />,
+  },
+  {
+    value: "NG",
+    label: "NG",
   },
 ];
