@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { Form, Modal, Select, Typography } from "antd";
+import { Form, Modal, Typography } from "antd";
 const { Title } = Typography;
 import "./modal.sass";
 import { FormattedMessage } from "react-intl";
@@ -71,6 +71,30 @@ const ModalComponent = memo(
                       />
                     </Form.Item>
                   </div>
+                  <div className="modal__item modal__item--sm">
+                    <Form.Item
+                      name="請求書番号"
+                      label={<FormattedMessage id="table.invoiceNumber" />}
+                      className="modal__label"
+                    >
+                      <InputComponent
+                        placeholder="243545366"
+                        className="modal__input"
+                      />
+                    </Form.Item>
+                  </div>
+                  <div className="modal__item modal__item--sm">
+                    <Form.Item
+                      name="受付番号"
+                      label={<FormattedMessage id="table.receptionNumber" />}
+                      className="modal__label"
+                    >
+                      <InputComponent
+                        placeholder="243545366"
+                        className="modal__input"
+                      />
+                    </Form.Item>
+                  </div>
                   <div className="modal__item">
                     <Form.Item
                       name="ステータス"
@@ -94,6 +118,30 @@ const ModalComponent = memo(
                         defaultValue="ほぼ新品"
                         className="modal__select"
                         options={optionStatusProducts}
+                      />
+                    </Form.Item>
+                  </div>
+                  <div className="modal__item modal__item--sm">
+                    <Form.Item
+                      name="検品結果"
+                      label={<FormattedMessage id="table.results" />}
+                      className="modal__label"
+                    >
+                      <InputComponent
+                        placeholder="Lorem ipsum ."
+                        className="modal__input"
+                      />
+                    </Form.Item>
+                  </div>
+                  <div className="modal__item modal__item--sm">
+                    <Form.Item
+                      name="発送詳細"
+                      label={<FormattedMessage id="table.shipping" />}
+                      className="modal__label"
+                    >
+                      <InputComponent
+                        placeholder="Lorem ipsum ."
+                        className="modal__input"
                       />
                     </Form.Item>
                   </div>

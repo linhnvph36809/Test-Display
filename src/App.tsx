@@ -77,9 +77,12 @@ function App() {
                       : message_ja["content.labelEmail"]
                   }
                 />
+                {
+                  isModalOpen.keySelected &&
                 <Button className="content__btn" htmlType="submit">
                   <FormattedMessage id="content.searchButton" />
                 </Button>
+                }
               </Flex>
             </Form>
             <div className="content__table">
