@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap")
-
-$text-color: #161617
+@import 'variables'
 
 *
     margin: 0
@@ -16,14 +15,18 @@ html
     font-size: 62.5%
 
 
+
+
 .content
     background-color: #fff
     padding: 0 12px
-    .content__heading-large
+    .heading
         font-size: 2.4rem
         font-weight: 600
         padding: 24px 0
         margin: 0
+        color: $text-color
+        background-color: #fff
     .content__heading-base
         font-size: 1.8rem
         font-weight: 700
@@ -113,7 +116,7 @@ html
 @media only screen and (max-width: 431px)
     .content
         padding: 0 24px 
-        .content__heading-large
+        .heading
             font-size: 1.8rem
             padding: 12px 0
         .content__heading-base
