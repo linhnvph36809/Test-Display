@@ -49,24 +49,36 @@
   "shipping.deliveryName": "納品名",
   "shipping.deliveryNumber": "納品番号",
   "shipping.created": "作成されました",
-  "shipping.lastUpdatedDate" : "最終更新日",
+  "shipping.lastUpdatedDate": "最終更新日",
   "shipping.deliveryAddress": "お届け先",
   "shipping.plannedNumberProducts": "予定されている商品数",
   "shipping.itemDetermined": "所在が特定された商品",
   "checkDelivery.trackYourShipment": "番号",
   "checkDelivery.amazon": "Amazon FBA輸送箱ラベル番号",
   "checkDelivery.contactNumber": "お問い合わせ番号",
-  "checkDelivery.deliveryStatus" :"配送状況",
-  "checkDelivery.weight" :"重さ (KG)",
-  "checkDelivery.dimensions": "寸法 (CM)"
+  "checkDelivery.deliveryStatus": "配送状況",
+  "checkDelivery.weight": "重さ (KG)",
+  "checkDelivery.dimensions": "寸法 (CM)",
+  "contentDelivery.showOnly": "不一致のみを表示",
+  "contentDelivery.productName": "商品名",
+  "contentDelivery.condition": "コンディション",
+  "contentDelivery.additionalInformation": "追加情報",
+  "contentDelivery.plannedNumberOfProducts": "予定されている商品数",
+  "checkDelivery.mismatch": "不一致",
+  "problem.message": "✓ 解決すべき不備はありません。",
+  "detailShip.trackYourShipment": "納品の追跡",
+  "detailShip.checkDeliveryDtatus": "配送状況の確認",
+  "detailShip.contentsOfDeliveryPlan": "納品プランの内容",
+  "detailShip.problem": "問題",
+  "createShip.deliveryToAmazon": "Amazonへ納品",
+  "createShip.selectInventory": "ステップ1 発送する在庫を選択",
+  "createShipments.skuDetail": "SKUの詳細",
+  "createShipments.displaySettings": "表示設定",
+  "createShipments.packingDetails": "梱包の詳細",
+  "createShipments.informationAction": "情報/アクション",
+  "createShipments.quantityToShip": "出荷する数量"
 
 
 
-
-
-
-   
-
-  
 
 }

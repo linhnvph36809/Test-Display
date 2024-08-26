@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import Return from "./pages/Return";
 import ListShipments from "./pages/ListShipments";
 import DetailShipments from "./pages/DetailShipments";
+import CreateShipments from "./pages/CreateShipments";
 
 const router = createBrowserRouter([
   {
@@ -20,13 +21,17 @@ const router = createBrowserRouter([
       {
         path: "/detail-shipments",
         element: <DetailShipments />,
-      }
+      },
+      {
+        path: "/create-shipments",
+        element: <CreateShipments />,
+      },
     ],
   },
   {
     path: "*",
     element: <h1>Not found</h1>,
-  }
+  },
 ]);
 
 export default router;

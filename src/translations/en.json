@@ -49,25 +49,40 @@
   "shipping.deliveryName": "Delivery name",
   "shipping.deliveryNumber": "Delivery number",
   "shipping.created": "created",
-  "shipping.lastUpdatedDate" : "Last updated date",
+  "shipping.lastUpdatedDate": "Last updated date",
   "shipping.deliveryAddress": "Delivery address",
   "shipping.plannedNumberProducts": "Planned number of products",
   "shipping.itemDetermined": "Items whose location has been determined",
   "checkDelivery.trackYourShipment": "Number",
   "checkDelivery.amazon": "  Amazon FBA box label number",
   "checkDelivery.contactNumber": "Contact number",
-  "checkDelivery.deliveryStatus" :"Delivery status",
-  "checkDelivery.weight" :"Weight",
-  "checkDelivery.dimensions " :"寸法 (CM)"
+  "checkDelivery.deliveryStatus": "Delivery status",
+  "checkDelivery.weight": "Weight",
+  "checkDelivery.dimensions": "Dimensions",
+  "contentDelivery.showOnly": "Show only discrepancies",
+  "contentDelivery.productName": "Product name",
+  "contentDelivery.condition": "condition",
+  "contentDelivery.additionalInformation": "Additional Information",
+  "contentDelivery.plannedNumberOfProducts": "Planned number of products",
+  "checkDelivery.mismatch": "mismatch",
+  "problem.message": "✓ There are no deficiencies to resolve.",
+  "detailShip.trackYourShipment": "Track your shipment",
+  "detailShip.checkDeliveryDtatus": "Check delivery status",
+  "detailShip.contentsOfDeliveryPlan": "Contents of delivery plan",
+  "detailShip.problem": "Problem",
+  "createShip.deliveryToAmazon": "Delivery to Amazon",
+  "createShip.selectInventory": "Step 1 Select inventory to ship",
+  "createShipments.skuDetail": "SKU details",
+  "createShipments.displaySettings": "Display settings",
+  "createShipments.packingDetails": "Packing details",
+  "createShipments.informationAction": "Information/Action",
+  "createShipments.quantityToShip": "Quantity to ship"
+
+  
 
 
 
-
-
-
-
-
-
+  
 
   
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Col, Flex, Menu, Row, Typography } from "antd";
-import "./detail-shipments.sass";
+import { Col, Flex, Layout, Menu, Row, Typography } from "antd";
+import "./style/detail-shipments.sass";
 const { Title } = Typography;
 
 import Heading from "../../components/Heading";

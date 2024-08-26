@@ -1,4 +1,4 @@
-import { Layout, Menu, Table, Typography } from "antd";
+import { Layout, Menu, Typography } from "antd";
 const { Paragraph } = Typography;
 import "./shipping.sass";
 
@@ -9,6 +9,7 @@ import InputText from "../../components/Form/InputText";
 import SelectComponent from "../../components/Form/SelectComponent";
 import { optionStatus, optionStatusProducts } from "../../datas";
 import Heading from "../../components/Heading";
+import TablePrimary from "../../components/TablePrimary";
 
 const ListShipments = () => {
   return (
@@ -22,11 +23,13 @@ const ListShipments = () => {
           <Menu
             mode="horizontal"
             className="shipping__menu"
-            items={[{
-              label: "納品",
-              key: "納品",
-            }]}
-            defaultSelectedKeys={['納品']}
+            items={[
+              {
+                label: "納品",
+                key: "納品",
+              },
+            ]}
+            defaultSelectedKeys={["納品"]}
           />
           <div className="content__table">
             <div className="shipping__filter">
@@ -72,13 +75,7 @@ const ListShipments = () => {
                 </button>
               </div>
             </div>
-            <Table
-              columns={columns as any}
-              dataSource={rows}
-              scroll={{
-                x: "100%",
-              }}
-            />
+            <TablePrimary columns={columns as any} dataSource={rows} />
             <div>
               <ul className="content__pagination">
                 <li>
