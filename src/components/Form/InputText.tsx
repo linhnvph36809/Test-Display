@@ -4,7 +4,7 @@ const InputText = ({
   className,
   placeholder = "Lorem ipsum .",
 }: {
-  className: string;
+  className?: string;
   placeholder?: string;
 }) => {
   return (

@@ -1,0 +1,178 @@
+$color-primary: #646464
+@import "../../../assets/styles/_variables"
+.detail-shipments
+    .detail-ship__line
+        height: 20px
+        background-color: #858792
+        width: 0.5px
+    .detail-shipments__text--bold
+        font-size: 1.8rem
+        font-weight: 600
+        margin: 0
+    .detail-shipments__text--blue
+        color: #3B82F6
+        font-size: 1.4rem
+        font-weight: 600
+    .detail-shipments__text
+        color: #646464
+        font-size: 1.4rem
+    .detail-shipments__btn
+        width: 96px
+        height: 22px
+        background-color: #646464
+        font-size: 1.4rem
+        color: #fff
+        border-radius: 24px
+        padding: 0px, 12px, 0px, 12px
+        border: 0
+    .detail-ship__infor
+        margin: 12px 0
+        border: 1px solid #C7C7C7
+        padding: 20px 12px
+        .detail-ship__item
+            padding: 0 20px
+            border-left: 1px solid #C7C7C7
+            &:first-child
+                border: 0
+                padding: 0
+            .detail-ship__title
+                color: #161617
+                font-weight: 600
+                display: flex
+                gap: 8px
+                align-items: center
+            .detail-ship__title--large
+                font-size: 1.4rem
+                margin-bottom: 15px
+            .detail-ship__title--sm
+                font-size: 1.2rem
+                margin-bottom: 8px
+        .detail-ship__text
+            color: $color-primary
+            font-weight: 400
+            font-size: 1.2rem
+            line-height: 1.8
+    .detail-ship__tabs
+        background-color: #EEF0F4
+        border: 0
+        margin-bottom: 40px
+        .ant-menu-overflow-item
+            padding: auto
+            border-left: 1px solid #C7C7C7
+            &:first-child
+                border-left: 0
+            &::after
+                visibility: hidden
+            &:hover
+                &::after
+                    bottom: unset !important
+                    border-bottom-width: 4px
+                    left: 0
+                    width: 100%
+                    visibility: visible
+
+        .ant-menu-item-selected
+            background-color: #fff
+            color: #161617
+            &::after
+                bottom: unset !important
+                border-bottom-width: 4px
+                width: 100%
+                left: 0
+                visibility: visible
+    .track-shipment
+        padding: 0 84px
+        display: flex
+        justify-content: space-between
+        .track-shipment__status
+            height: 95px
+            &:last-child .track-shipment__line
+                display: none
+            .track-shipment__row
+                display: flex   
+                align-items: center
+                gap: 18px
+                .track-shipment__item
+                    width: 200px
+                    color: #161617
+                    font-weight: 600
+                    font-size: 1.6rem
+                    &:first-child
+                        text-align: end
+                .track-shipment__icon
+                    position: relative
+                    .track-shipment__line
+                        width: 2px
+                        height: 50px
+                        background-color: #3B82F6
+                        position: absolute
+                        left: 50%
+                        transform: translateX(-50%)
+                        top: 100%
+                .track-shipment__text
+                    color: $color-primary
+                    font-weight: 400
+                    font-size: 1.4rem
+                    text-align: end
+
+        .track-shipment__overview
+            width: 248px
+            height: 166px
+            background-color: #EEF0F4
+            padding: 24px
+            .track-shipment__title
+                color: #161617
+                font-weight: 600
+                font-size: 1.4rem
+            .track-shipment__text
+                color: $color-primary
+                font-weight: 400
+                font-size: 1.2rem
+                margin-top: 12px
+    .check-delivery
+        .ant-table-content
+            thead th
+                background-color : #F5F6F8
+        .check-delivery__input
+            border-radius: 0
+            width: 224px
+    .ant-pagination
+        display: none
+
+    .content-delivery
+        .content-delivery__checkbox
+            gap: 12px
+            span
+                border-radius: 0
+        table
+            .content-delivery__row
+                display:  flex
+                justify-content: space-between  
+                align-items: center 
+                color: $bg-primary
+            .content-delivery__text
+                font-size: 1.4rem 
+                font-weight: 400
+                color: $color-primary
+            td .content-delivery__blue
+                text-align: end
+                &:last-child
+                    color: $bg-primary
+    .problem
+        .problem__alert
+            height: 70px
+            border-radius: 0    
+        .problem__alert--succes
+            background-color:#EDF2E5  
+        .problem__alert--error
+            background-color: #f7e1e0
+            margin-top: 32px
+        .problem__row
+            margin-top: 32px
+            display: flex
+            align-items: end
+            gap: 12px
+            p
+                color: #343434
+                font-size: 1.6rem
+                font-weight: 400

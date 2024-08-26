@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap")
-
-$text-color: #161617
+@import './_variables'
 
 *
     margin: 0
     padding: 0
     box-sizing: border-box
-
 
 html
     font-family: 'Open Sans', sans-serif
@@ -15,15 +13,121 @@ html
     font-style: normal
     font-size: 62.5%
 
+.p-y-1
+    padding: 4px 0
+
+.p-y-2
+    padding: 8px 0
+
+.p-y-3
+    padding: 12px 0
+
+.p-y-4
+    padding: 16px 0
+
+.p-x-1
+    padding: 0 4px
+
+.p-x-2
+    padding: 0 8px
+
+.p-x-3
+    padding: 0 12px
+
+.p-x-4
+    padding: 0 16px
+
+.m-y-1
+    margin: 4px 0
+
+.m-y-2
+    margin: 8px 0
+
+.m-y-3
+    margin: 12px 0
+
+.m-y-4
+    margin: 16px 0
+
+.m-x-1
+    margin: 0 4px
+
+.m-x-2
+    margin: 0 8px
+
+.m-x-3
+    margin: 0 12px
+
+.m-x-4
+    margin: 0 16px
+
+.flex
+    display: flex
+
+.justify-between
+    justify-content: space-between
+
+.items-center
+    align-items: center
+
+.gap-1
+    gap: 4px
+
+.gap-2
+    gap: 8px
+
+.gap-3
+    gap: 12px
+
+.gap-4
+    gap: 16px
+
+.text-xs
+    font-size: 1.2rem
+
+.text-sm
+    font-size: 1.4rem
+
+.text-base
+    font-size: 1.6rem
+
+.text-lg
+    font-size: 1.8rem
+
+.font-normal
+    font-weight: 400
+
+.font-medium
+    font-weight: 500
+
+.font-semibold
+    font-weight: 600
+
+.font-bold
+    font-weight: 700
+
+.bg-primary
+    background-color: $bg-primary
+
+.color-primary
+    color: $bg-primary
+
+.color-text 
+    color: $text-color
+
+.color-gray
+    color: #646464
 
 .content
     background-color: #fff
     padding: 0 12px
-    .content__heading-large
+    .heading
         font-size: 2.4rem
         font-weight: 600
         padding: 24px 0
         margin: 0
+        color: $text-color
+        background-color: #fff
     .content__heading-base
         font-size: 1.8rem
         font-weight: 700
@@ -34,7 +138,7 @@ html
     .content__infor
         background-color: #F1F3F6
         width: 635px
-        height: 32px 
+        height: 32px
         align-items: center
         padding: 5px
         margin-bottom: 8px
@@ -48,7 +152,7 @@ html
             font-size: 1.6rem
             font-weight: 600
             color: $text-color
-    .content__form 
+    .content__form
         margin-top: 35px
         margin-bottom: 16px
         .content__input
@@ -65,9 +169,9 @@ html
                 font-weight: 700
             &:focus
                 outline: none
-                box-shadow: none 
+                box-shadow: none
         .content__btn
-            height: 35px 
+            height: 35px
             padding: 0 10px
             font-size: 1.4rem !important
             color: #858792
@@ -75,38 +179,19 @@ html
         border: 1px solid #C7C7C7
         .ant-pagination
             display: none
-        table 
-            th 
-                color: $text-color !important
-                background-color: #F5F6F8
-                padding: 17px 16px !important
-                border-bottom: 1px solid #C7C7C7
-                &::before
-                    background-color: #858792 !important
-                    width: 0.5px !important
-                    height: 32px !important
-            tbody td
-                border-bottom: 1px solid #C7C7C7
-                font-size: 1.2rem !important
-                font-weight: 600
-            .content__radio
-                display: none
-            .table__input
-                display: none
-            .table__select--status
-                display: none
     .content__pagination
         display: flex
         list-style: none
         align-items: center
         justify-content: center
         gap: 16px
-        margin: 12px 0
+        border-bottom: 1px solid#C7C7C7
+        padding: 12px 0
         .content__pagination--number
             font-size: 1.4rem
             font-weight: 600
             color: #646464
-    .content__btn--upload 
+    .content__btn--upload
         border-color: #EB2725
         color: #EB2725
         border-radius: 4px
@@ -115,11 +200,12 @@ html
             border-color: #EB2725 !important
             color: #EB2725 !important
             border-radius: 4px !important
-
+    .ant-select-selector
+        border-radius: 0
 @media only screen and (max-width: 431px)
     .content
-        padding: 0 24px 
-        .content__heading-large
+        padding: 0 24px
+        .heading
             font-size: 1.8rem
             padding: 12px 0
         .content__heading-base
@@ -127,13 +213,13 @@ html
             margin-bottom: 16px
         .content__infor
             width: 100%
-            height: 24px 
+            height: 24px
             .content__label
                 width: 150px
                 font-size: 1.2rem
-            .content__description   
+            .content__description
                 font-size: 1.4rem
-        .content__form 
+        .content__form
             margin-top: 32px
             .content__input
                 font-size: 1.6rem
@@ -141,8 +227,6 @@ html
                 height: 24px
                 &::placeholder
                     font-size: 1.6rem
-            .content__btn
-                display: none
         .content__table
             table
                 .content__radio
@@ -151,8 +235,6 @@ html
                     font-weight: 400
                 .content__radio:last-child
                     margin-top: 12px
-                .ant-table-selection-column
-                    display: none
                 .table__text--lg
                     display: none
                 .table__input
@@ -172,8 +254,3 @@ html
                         border-radius: 0
             .statusProduct
                 width: 88px !important
-
-@media only screen and (min-width: 600px)
-    table
-        .table__hidden
-            display: none
