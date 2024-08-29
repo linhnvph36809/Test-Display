@@ -76,14 +76,42 @@
   "createShipments.displaySettings": "Display settings",
   "createShipments.packingDetails": "Packing details",
   "createShipments.informationAction": "Information/Action",
-  "createShipments.quantityToShip": "Quantity to ship"
+  "createShipments.quantityToShip": "Quantity to ship",
+  "createShipments.shippingBoxNumber": "Shipping box number",
+  "createShipments.FBABoxLabelNumber": "FBA box label number",
+  "createShipments.trackingInformationURL": "Tracking information URL",
+  "createShipments.weight": "Weight (lbs)",
+  "createShipments.dimensions": "Dimensions (in)",
+  "createShipments.labelTracking": "✓ Step 3 Print the box label",
+  "createShipments.labelTrackingInformation": "Final step: Tracking information",
+  "createShipments.inquirySlipNumber": "Inquiry slip number",
+  "createShipments.deliveryCompany": "Delivery company UPS (Amazon partner carrier)",
+  "createShipments.cancelDeliverySettings": "Cancel delivery settings",
+  "createShipments.createNewDelivery": "Create a new delivery plan",
+  "createShipments.openDeliveryProcedureDetails": "Open delivery procedure details",
+  "createShipments.labelCheckShipping": "✓ Step 2 - Send shipping notification",
+  "createShipments.checkShippingBoxLabel": "Step 3 Check the shipping box label",
+  "createShipments.shippingSource": "Shipping source",
+  "createShipments.shippingDate": "Shipping date",
+  "createShipments.shippingDateValue": "Thursday, May 30, 2024",
+  "createShipments.changeShippingDate": " Change shipping date",
+  "createShipments.confirmedShipments": "Confirmed shipments",
+  "createShipments.afterYouPrint": "After you print the box label, the status of your shipment changes to Ready for shipment.",
+  "createShipments.deliveryOfMaterials": "delivery of materials",
+  "createShipments.viewOrEditContent": "View or edit content",
+  "createShipments.deliveryName": "Delivery name",
+  "createShipments.deliveryNumber": "Delivery number",
+  "createShipments.deliveryDestination": "Delivery destination",
+  "createShipments.shippingProducts": "Shipping products",
+  "createShipments.printBoxLabels": "Print box labels and shipping labels",
+  "createShipments.confirmation": "confirmation",
+  "createShipments.inProgress": "in progress",
+  "createShipments.trackingInformation": "Final step: Tracking information",
+  "createShipments.selectInventoryToShip": "Step 1 Select inventory to ship",
+  "createShipments.allFBASKUs": "All FBA SKUs",
+  "createShipments.readyToShip": "SKUs ready to ship (0)",
+  "createShipments.clickHereDetails": "Click here for details" ,
+  "createShipments.shipsFromAnotherAddress": "Ships from another address" 
 
-  
-
-
-
-  
-
-  
 
 }

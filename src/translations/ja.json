@@ -76,9 +76,69 @@
   "createShipments.displaySettings": "表示設定",
   "createShipments.packingDetails": "梱包の詳細",
   "createShipments.informationAction": "情報/アクション",
-  "createShipments.quantityToShip": "出荷する数量"
+  "createShipments.quantityToShip": "出荷する数量",
+  "createShipments.shippingBoxNumber": "輸送箱の号",
+  "createShipments.FBABoxLabelNumber": "FBA輸送箱のラベル番号",
+  "createShipments.trackingInformationURL": "追跡情報のURL",
+  "createShipments.weight": "重量 (ポンド)",
+  "createShipments.dimensions": "寸法 (in)",
+  "createShipments.labelTracking": "✓ ステップ3輸送箱ラベルを印刷",
+  "createShipments.labelTrackingInformation": "最終ステップ: 追跡情報",
+  "createShipments.inquirySlipNumber": "お問い合わせ伝票番号",
+  "createShipments.deliveryCompany": "配送会社 UPS (Amazonパートナーキャリア)",
+  "createShipments.cancelDeliverySettings": "納品設定をキャンセルする",
+  "createShipments.createNewDelivery": "新しい納品プランを作成する",
+  "createShipments.openDeliveryProcedureDetails": "納品手続きの詳細を開く",
+  "createShipments.labelCheckShipping": "✓ ステップ2-出荷通知の送信",
+  "createShipments.checkShippingBoxLabel": "ステップ3　輸送箱ラベルの確認",
+  "createShipments.shippingSource": "発送元",
+  "createShipments.shippingDate": "出荷日",
+  "createShipments.shippingDateValue": " 2024年5月30日木曜日",
+  "createShipments.changeShippingDate": " 出荷日の変更",
+  "createShipments.confirmedShipments": " 確認済みの出荷数",
+  "createShipments.afterYouPrint": " 輸送箱ラベルを印刷すると、 納品のステータスが 「納品準備完了」 に変わります。",
+  "createShipments.deliveryOfMaterials": "納品#1",
+  "createShipments.viewOrEditContent": "内容を表示または編集",
+  "createShipments.deliveryName": "納品名",
+  "createShipments.deliveryNumber": "納品番号",
+  "createShipments.deliveryDestination": "納品先",
+  "createShipments.shippingProducts": "出荷商品",
+  "createShipments.printBoxLabels": "輸送箱ラベルと配送ラベルを印刷",
+  "createShipments.confirmation": "確認",
+  "createShipments.inProgress": "進行中" ,
+  "createShipments.trackingInformation": "最終ステップ: 追跡情報" ,
+  "createShipments.selectInventoryToShip": "ステップ1 発送する在庫を選択" ,
+  "createShipments.allFBASKUs": "FBAのSKUすべて",
+  "createShipments.readyToShip": "発送準備ができているSKU (0)" ,
+  "createShipments.clickHereDetails": "詳細はこちら",
+  "createShipments.shipsFromAnotherAddress": "別の住所から発送" 
+
+  
+  
+
+
+  
+ 
+
+  
+
+
+  
+
+
+  
+
+  
+  
+
+
+  
 
 
 
+
+  
+
+  
 
 }

@@ -43,7 +43,7 @@ const All = () => {
         title={"梱包の詳細"}
         height={"auto"}
         footer={[
-          <span className="modal__link-text color-primary">
+          <span className="modal__link-text color-primary m-r-4">
             梱包テンプレートを削除
           </span>,
           <Button

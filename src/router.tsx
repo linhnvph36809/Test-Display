@@ -4,6 +4,9 @@ import Return from "./pages/Return";
 import ListShipments from "./pages/ListShipments";
 import DetailShipments from "./pages/DetailShipments";
 import CreateShipments from "./pages/CreateShipments";
+import CheckTheShipping from "./pages/CreateShipments/CheckTheShipping";
+import TrackingInformation from "./pages/CreateShipments/TrackingInformation";
+import SendShippingNotification from "./pages/CreateShipments/SendShippingNotification";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,18 @@ const router = createBrowserRouter([
         path: "/create-shipments",
         element: <CreateShipments />,
       },
+      {
+        path: "/check-shipping",
+        element: <CheckTheShipping />,
+      },
+      {
+        path: "tracking-information",
+        element: <TrackingInformation />,
+      },
+      {
+        path: "send-shipping",
+        element: <SendShippingNotification />
+      }
     ],
   },
   {

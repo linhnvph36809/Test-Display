@@ -114,20 +114,45 @@ const Return = () => {
         isSelected={isModalOpen.isSelected}
         hiddenModal={hiddenModal}
         title={<FormattedMessage id="modal.title" />}
-
       >
         <div className="modal__body">
           <div>
             <Title className="modal__title">
               <FormattedMessage id="modal.photoShoot" />
             </Title>
-            <InputRadio className="modal__radio" />
+            <InputRadio
+              listRadios={[
+                {
+                  defaultValue: "要",
+                  translationId: "modal.essential",
+                  className: "modal__radio",
+                },
+                {
+                  defaultValue: "不要",
+                  translationId: "modal.unnecessary",
+                  className: "modal__radio",
+                },
+              ]}
+            />
           </div>
           <div>
             <Title className="modal__title">
               <FormattedMessage id="modal.requestDetails" />
             </Title>
-            <InputRadio className="modal__radio" />
+            <InputRadio
+              listRadios={[
+                {
+                  defaultValue: "要",
+                  translationId: "modal.essential",
+                  className: "modal__radio",
+                },
+                {
+                  defaultValue: "不要",
+                  translationId: "modal.unnecessary",
+                  className: "modal__radio",
+                },
+              ]}
+            />
           </div>
           <div>
             <Form layout="vertical">
