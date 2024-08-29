@@ -1,16 +1,20 @@
 import { Radio } from "antd";
 import { FormattedMessage } from "react-intl";
 
-const InputRadio = ({className}:{className:string}) => {
+const InputRadio = ({ className, listRadios, ...props }: any) => {
   return (
     <>
-      <Radio.Group>
-        <Radio className={className} value={"要"}>
-          <FormattedMessage id="modal.essential" />
-        </Radio>
-        <Radio className={className} value={"不要"}>
-          <FormattedMessage id="modal.unnecessary" />
-        </Radio>
+      <Radio.Group className={className}>
+        {listRadios?.map((radios: any, i: number) => (
+          <Radio
+            {...props}
+            key={i}
+            className={radios.className}
+            value={radios.defaultValue}
+          >
+            <FormattedMessage id={radios.translationId} />
+          </Radio>
+        ))}
       </Radio.Group>
     </>
   );
